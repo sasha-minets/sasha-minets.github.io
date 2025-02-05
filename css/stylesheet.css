@@ -281,6 +281,10 @@ h1 a, h1 a:active, h1 a:visited, h2 a, h2 a:active, h2 a:visited, h3 a, h3 a:act
   color: #cb4b16;
 }
 
+table th, table td {
+  color: #026234;
+}
+
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   background-color: #eee8d5;
   text-decoration: none;
@@ -328,10 +332,11 @@ footer a, footer a:active, footer a:visited {
 @media print {
   footer, nav {
     display: none;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
   }
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
+  
   a:after {
     content: " '(' attr(href) ') '";
   }
