@@ -114,6 +114,28 @@ ol li ol li {
   font-weight: bold;
 }
 
+.papers>content>details>summary {
+  padding: 0em;
+  margin: 0em 0em;
+  text-align: left;
+  font-weight: bold;
+}
+
+.papers>content>details>summary>em {
+  font-size: 95%;
+  font-weight: normal;
+}
+
+details summary::marker,
+:is(::-webkit-details-marker) {
+  content: "▸";
+  font-weight: bold;
+}
+
+details[open] summary::marker {
+  content: "▾";
+}
+
 .papers>content>em {
   font-size: 95%;
 }
